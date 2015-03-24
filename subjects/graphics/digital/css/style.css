@@ -1,0 +1,29 @@
+.acronym {
+    height: 22px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+@keyframes fade {
+    from {
+        color: #5f5f5f;
+    } to {
+        color: #ddd;
+    }
+}
+
+.acronym > p {
+    font-size: 20px;
+    font-family: "Helvetica Neue", HelveticaNeue, "Arial", sans-serif;
+    position: relative;
+    width: auto;
+    display: inline;
+    cursor: pointer;
+}
+
+.acronym > p:hover {
+    animation-name: fade;
+    animation-duration: 0.5s;
+    color: #ddd;
+}
