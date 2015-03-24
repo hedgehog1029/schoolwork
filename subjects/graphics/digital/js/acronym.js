@@ -36,6 +36,7 @@ function createText(word, div) {
         console.log(word.letters[i]);
         e = document.createElement("p");
         e.appendChild(document.createTextNode(word["letters"][i].toUpperCase()));
+        e.click(clickHandler(word["letters"][i]));
         e.className = "word";
         div.appendChild(e);
     }
@@ -47,10 +48,16 @@ function clearText(div) {
 
 function clearAllBut(letter, div) {
     for (var i = 0; i < div.children.length; i++) {
-        if (letter == div.children[i].innerHTML) {
-            
+        if (!letter == div.children[i].innerHTML) {
+            div.children[i].fadeOut(500, function() {
+                this.remove();
+            });
         }
     }
+}
+
+function clickHandler(letter) {
+    
 }
 
 function init() {
