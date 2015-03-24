@@ -25,22 +25,37 @@ var acronyms = [
     {"word": "Zander", "letters": ["Z", "a", "n", "d", "e", "r"], "start": "z", "length": "6"}
 ];
 
-var startWord = 20;
+var startWord = 19;
 
-document.body.onload = init;
+function createText(word, div) {
+    console.log("length: " + word.length);
+    var e;
+    for (var i = 0;; i++) {
+        if (i == word.length) break;
+        console.log("i: " + i);
+        console.log(word.letters[i]);
+        e = document.createElement("p");
+        e.appendChild(document.createTextNode(word["letters"][i].toUpperCase()));
+        e.className = "word";
+        div.appendChild(e);
+    }
+}
+
+function clearText(div) {
+    div.innerHTML = "";
+}
+
+function clearAllBut(letter, div) {
+    for (var i = 0; i < div.children.length; i++) {
+        if (letter == div.children[i].innerHTML) {
+            
+        }
+    }
+}
 
 function init() {
     var div = document.getElementById("acronym");
     
+    console.log("startWord: " + acronyms[startWord].word);
     createText(acronyms[startWord], div);
-}
-
-function createText(word, div) {
-    var e;
-    for (var i = 0; i == word["length"] - 1; i++) {
-        e = document.createElement("p");
-        e.appendChild(document.createTextNode(word["letters"][i]));
-        e.id = "word";
-        div.appendChild(e);
-    }
 }
