@@ -1,39 +1,30 @@
-@font-face {
-    font-family: 'square';
-    src:
-        url("../font/square.ttf")
-        format('truetype');
-}
+@import url(http://fonts.googleapis.com/css?family=Nova+Square);
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
+    font-family: 'Nova Square', sans-serif;
+    background-color: #111;
+    color: white;
 }
 
-.content {
-    background-color: #000;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-.countdown-container {
-    position: fixed;
-    text-align: center;
-    color: #FFF;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    font-family: 'square', sans-serif;
+.container {
+    font-size: 23px;
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+       -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+         -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 #countdown {
-    margin: 0;
+    text-shadow: 
+        1px 0px 1px #999, 0px 1px 1px #eee, 
+        2px 1px 1px #999, 1px 2px 1px #eee,
+        3px 2px 1px #999, 2px 3px 1px #eee,
+        4px 3px 1px #999, 3px 4px 1px #eee,
+        5px 4px 1px #999, 4px 5px 1px #eee,
+        6px 5px 1px #999, 5px 6px 1px #eee,
+        7px 6px 1px #999;
 }
