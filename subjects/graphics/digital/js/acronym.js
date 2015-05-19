@@ -32,12 +32,10 @@ function createText(word, div) {
     var e;
     for (var i = 0;; i++) {
         if (i == word.length) break;
-        console.log("i: " + i);
-        console.log(word.letters[i]);
         e = document.createElement("p");
         e.appendChild(document.createTextNode(word["letters"][i].toUpperCase()));
-        e.click(clickHandler(word["letters"][i]));
         e.className = "word";
+        e.onclick = function() { clickHandler(word.letters[i]) };
         div.appendChild(e);
     }
 }
@@ -57,12 +55,11 @@ function clearAllBut(letter, div) {
 }
 
 function clickHandler(letter) {
-    
+    console.log("letter: " + letter);
+    clearAllBut(letter, document.getElementById("acronym"));
 }
 
 function init() {
     var div = document.getElementById("acronym");
-    
-    console.log("startWord: " + acronyms[startWord].word);
     createText(acronyms[startWord], div);
 }
