@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'FYF';
+    font-family: 'square';
     src:
-        url("font/fyf.ttf")
+        url("../font/square.ttf")
         format('truetype');
 }
 
@@ -31,7 +31,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
-    font-family: 'FYF', sans-serif;
+    font-family: 'square', sans-serif;
 }
 
 #countdown {
