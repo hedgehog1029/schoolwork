@@ -1,22 +1,21 @@
 <html>
-    <head>
-        <title>APEX</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-    </head>
-    <body>
-        <div class="page">
-            <div class="content">
-                <div class="countdown-container">
-                    <h1 id="countdown">21:00:12</h1>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $("#countdown").countdown("2016/07/21", function(event) {
-                $(this).text(event.strftime("%D/%H/%M/%S"));
-            });
-        </script>
-    </body>
+  <head>
+    <title>APEX</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+  </head>
+<body>
+    
+    <div class="container">
+        <h1 id="countdown">Your Browser does not support JavaScript.</h1>
+    </div>
+
+    <script type="text/javascript">
+        $("#countdown").countdown("2016/07/21", function(event) {
+            $(this).text(event.strftime("%D/%H/%M/%S"));
+        });
+    </script>
+    
+</body>
 </html>
