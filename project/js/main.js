@@ -1,7 +1,5 @@
 $(document).ready(function() {
     
-    $("#diary-container").load("https://www.google.com/calendar/embed?src=challoners.org_1e3c7g4qn1kic52usnlbrn63ts%40group.calendar.google.com&ctz=Europe/London #container > *");
-    
     var offset1 = $(".menu").height() + $(".header").height();
     $("#bgvid").css("top", offset1);
     
