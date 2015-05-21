@@ -23,7 +23,6 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: transparent;
 }
 
 .universe video#bgvid {
@@ -35,10 +34,19 @@ body {
     height: auto;
     max-width: 100%;
     z-index: -100;
-    
-    background-image: url('../img/flight.gif');
-    background-size: cover;
 }
+
+.u2, uN {
+    margin-top: 20px;
+}
+
+.content-main {
+    font-family: 'Raleway', sans-serif;
+    color: #111;
+    z-index: 2;
+    padding: 0px 10px;
+}
+    
 
 .wrapper {
     z-index: 2;
@@ -73,7 +81,7 @@ body {
 .sidebar {
     float: right;
     bottom: -50px;
-    right: 0;
+    right: 10px;
     
     width: 300px;
     z-index: 5;
