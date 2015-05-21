@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body {
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    padding: 0;
+    background-color: #eee;
+}
+
+.header img {
+    width: 100%;
+}
+
+.universe {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.universe video#bgvid {
+    position: absolute;
+    top: 200px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    z-index: -100;
+    
+    background-image: url('../img/flight.gif');
+    background-size: cover;
+}
+
+.wrapper {
+    z-index: 2;
+    padding: 50px 100px;
+}
+
+.content {
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 2px #111;
+    color: #fff;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.content p {
+    font-size: 17px;
+}
+
+.content h2 {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-height: 800px) {
+    .sidebar {
+        height: 400px;
+    }
+}
+
+.sidebar {
+    float: right;
+    bottom: -50px;
+    right: 0;
+    
+    width: 300px;
+    z-index: 5;
+    position: absolute;
+}
+
+.sidebar div.twitter-header {
+    background-color: goldenrod;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    transition: background-color .25s;
+}
+
+.sidebar div.twitter-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.sidebar div.twitter-header:hover {
+    background-color: dodgerblue;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 100;
+}
+
+.menu-anchor {
+    width: 100%;
+    height: 0;
+}
+
+.expand {
+    height: 46px;
+}
+
+/* Menu */
+
+.menu {
+    background: goldenrod;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    zoom: 1;
+    font-size: 0;
+    text-align: center;
+}
+
+.menu ul:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    transition: color .25s;
+}
+
+.menu ul li a:hover {
+    color: #333;
+}
+
+.menu ul li a:hover:before {
+    width: 100%;
+}
+
+.menu ul li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -3px;
+    top: 19px;
+    height: 6px;
+    width: 6px;
+    background: #fff;
+    opacity: .5;
+}
+
+.menu ul li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #333;
+    transition: width .25s;
+}
+
+.menu ul li.last > a:after, .menu ul li:last-child > a:after {
+    display: none;
+}
+
+.menu ul li.active a {
+    color: #333;
+}
+
+.menu ul li.active a:before {
+    width: 100%;
+}

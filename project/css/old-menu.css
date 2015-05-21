@@ -1,0 +1,85 @@
+/*
+
+.container {
+    width: 210px;
+    height: 140px;
+    position: relative;
+    margin: 0;
+    -webkit-perspective: 1100px;
+    -moz-perspective: 1100px;
+    -o-perspective: 1100px;
+    perspective: 1100px;
+}
+
+#carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform: translateZ( -145px );
+    -moz-transform: translateZ( -145px );
+    -o-transform: translateZ( -145px );
+    transform: translateZ( -145px );
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+}
+
+#carousel figure {
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+#carousel figure:nth-child(1) { background: hsla(   0, 100%, 50%, 0.8 ); }
+#carousel figure:nth-child(2) { background: hsla(  40, 100%, 50%, 0.8 ); }
+#carousel figure:nth-child(3) { background: hsla(  80, 100%, 50%, 0.8 ); }
+#carousel figure:nth-child(4) { background: hsla( 120, 100%, 50%, 0.8 ); }
+#carousel figure:nth-child(5) { background: hsla( 160, 100%, 50%, 0.8 ); }
+
+#carousel figure:nth-child(1) {
+    -webkit-transform: rotateY(   0deg ) translateZ( 145px );
+    -moz-transform: rotateY(   0deg ) translateZ( 145px );
+    -o-transform: rotateY(   0deg ) translateZ( 145px );
+    transform: rotateY(   0deg ) translateZ( 145px );
+}
+
+#carousel figure:nth-child(2) {
+    -webkit-transform: rotateY(  72deg ) translateZ( 145px );
+    -moz-transform: rotateY(  72deg ) translateZ( 145px );
+    -o-transform: rotateY(  72deg ) translateZ( 145px );
+    transform: rotateY(  72deg ) translateZ( 145px );
+}
+
+#carousel figure:nth-child(3) {
+    -webkit-transform: rotateY(  144deg ) translateZ( 145px );
+    -moz-transform: rotateY(  144deg ) translateZ( 145px );
+    -o-transform: rotateY(  144deg ) translateZ( 145px );
+    transform: rotateY(  144deg ) translateZ( 145px );
+}
+
+#carousel figure:nth-child(4) {
+    -webkit-transform: rotateY( 216deg ) translateZ( 145px );
+    -moz-transform: rotateY( 216deg ) translateZ( 145px );
+    -o-transform: rotateY( 216deg ) translateZ( 145px );
+    transform: rotateY( 216deg ) translateZ( 145px );
+}
+
+#carousel figure:nth-child(5) {
+    -webkit-transform: rotateY( 288deg ) translateZ( 145px );
+    -moz-transform: rotateY( 288deg ) translateZ( 145px );
+    -o-transform: rotateY( 288deg ) translateZ( 145px );
+    transform: rotateY( 288deg ) translateZ( 145px );
+}
+*/
