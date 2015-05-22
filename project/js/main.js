@@ -23,6 +23,9 @@ $(document).ready(function() {
     });
         
     $(window).scroll(function(e) {
+
+        $(window).resize();
+
         $(".universe").css("height", $("#bgvid").height());
         if ($(window).scrollTop() > 155) {
             $(".menu").addClass("fixed");
