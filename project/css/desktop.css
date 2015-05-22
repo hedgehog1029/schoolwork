@@ -45,7 +45,7 @@ body {
     z-index: 2;
     padding: 0px 10px;
 }
-    
+
 
 .wrapper {
     z-index: 2;
@@ -71,6 +71,13 @@ body {
     margin: 0;
 }
 
+.content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
 @media (max-height: 800px) {
     .sidebar {
         height: 400px;
@@ -81,7 +88,7 @@ body {
     float: right;
     bottom: -50px;
     right: 10px;
-    
+
     width: 300px;
     z-index: 5;
     position: absolute;
@@ -93,7 +100,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #fff;
-    transition: background-color .25s;
+    transition: background-color .25s, box-shadow .25s;
+    box-shadow: 0 2px 0 goldenrod;
 }
 
 .sidebar div.twitter-header a {
@@ -104,6 +112,7 @@ body {
 
 .sidebar div.twitter-header:hover {
     background-color: dodgerblue;
+    box-shadow: 0 2px 0 dodgerblue;
 }
 
 .fixed {

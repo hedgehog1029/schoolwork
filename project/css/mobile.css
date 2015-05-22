@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body {
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    padding: 0;
+    background-color: #eee;
+}
+
+/* Menu */
+
+.menu {
+    background: goldenrod;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    zoom: 1;
+    font-size: 0;
+    text-align: center;
+}
+
+.menu ul:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    transition: color .25s;
+}
+
+.menu ul li a:hover {
+    color: #333;
+}
+
+.menu ul li a:hover:before {
+    width: 100%;
+}
+
+.menu ul li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -3px;
+    top: 19px;
+    height: 6px;
+    width: 6px;
+    background: #fff;
+    opacity: .5;
+}
+
+.menu ul li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #333;
+    transition: width .25s;
+}
+
+.menu ul li.last > a:after, .menu ul li:last-child > a:after {
+    display: none;
+}
+
+.menu ul li.active a {
+    color: #333;
+}
+
+.menu ul li.active a:before {
+    width: 100%;
+}
