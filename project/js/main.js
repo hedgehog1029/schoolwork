@@ -15,6 +15,12 @@ $(document).ready(function() {
             $(".sidebar").css("display", "block");
         }
     });
+
+    $(window).resize();
+
+    $(document).on("webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange", function(e) {
+        $(window).resize();
+    });
         
     $(window).scroll(function(e) {
         $(".universe").css("height", $("#bgvid").height());
